@@ -25,10 +25,10 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../../index.php?page=articles">Articles</a>
+                <a class="nav-link" href="/">Articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../../index.php?page=categories">Categories</a>
+                <a class="nav-link" href="/index.php?page=categories">Categories</a>
             </li>
         </ul>
     </div>

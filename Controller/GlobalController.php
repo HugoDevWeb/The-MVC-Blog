@@ -17,22 +17,29 @@ Class GlobalController
         switch ($page) {
             case ($page === "/"):
                 $this->db->readAll('articles');
+                $category = $this->db->readAll("categories");
                 require "views/articles/index.php";
                 break;
 
             case ($page === "show_article"):
                 $id = $_GET['id'];
-                $this->db->readArticle("articles", $id);
+                $this->db->readArticle($id);
                 require "views/articles/show.php";
                 break;
 
-//            case ($page === "delete_director"):
-//                if (isset($_GET['id'])) {
-//                    $id = $_GET['id'];
-//                    $this->db->delete('director',$id);
-//                }
-//                require "views/show.php";
-//                break;
+            case ($page === "categories"):
+                $this->db->readAll("categories");
+                require "views/categories/index.php";
+                break;
+
+
+            case ($page === "show_category"):
+                $id = $_GET['id'];
+                $this->db->readCategory($id);
+                $id2 = $_GET['id'];
+                $this->db->getArticleFromCategory($id2);
+                require "views/categories/show.php";
+                break;
 //
 //            case ($page === "delete_movie"):
 //                if (isset($_GET['id'])) {
