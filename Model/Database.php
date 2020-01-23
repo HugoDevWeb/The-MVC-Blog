@@ -25,6 +25,14 @@ class Database{
         return ($success) ? $rows: [];
     }
 
+    public function readArticle($table, $id){
+        $query = $this->pdo->prepare('SELECT * FROM ' .$table. ' WHERE `id` = :id');
+        $query->bindValue(':id', $id);
+        $success = $query->execute();
+        $row = $query->fetchAll(PDO::FETCH_ASSOC);
+        return ($success) ? $row: [];
+    }
+
 
 
 }

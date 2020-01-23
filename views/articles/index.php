@@ -1,6 +1,6 @@
 <?php
 /* @var GlobalController $this */
-require "partials/header.php";
+require "views/partials/header.php";
 ?>
 
     <!--    <a class="btn btn-default" href="/index.php?page=show_movies&id=--><?php //echo $value['id']; ?><!--">Info</a>-->
@@ -24,7 +24,7 @@ require "partials/header.php";
                         echo substr($article["description"], 0, 120) . "..."
                         ?>
                     </td>
-                    <td><a href="" class="btn btn-primary rounded-pill">Info</a></td>
+                    <td><a href="/index.php?page=show_article&id=<?php echo $article['id'] ?>" class="btn btn-primary rounded-pill">Info</a></td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
@@ -33,5 +33,5 @@ require "partials/header.php";
 
 
 <?php
-require "partials/footer.php";
+require "views/partials/footer.php";
 ?>
