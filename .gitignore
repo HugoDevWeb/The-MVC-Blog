@@ -1,0 +1,7 @@
+/resources/config/config.php
+.idea
+.phpintel
+composer.json
+
+composer.phar
+/vendor/
