@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Filmer</title>
+    <title>Blog</title>
 
     <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
 

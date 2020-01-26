@@ -2,7 +2,7 @@
 
 <footer class="footer">
     <div class="container">
-        <p class="text-muted">&copy Hugo Lavergne & Benjamin Lebon 2020</p>
+        <p class="text-muted">&copy Hugo Lavergne</p>
     </div>
 </footer>
 

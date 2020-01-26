@@ -42,7 +42,7 @@ class Article
     }
 
     /**
-     * @param mixed $name
+     * @param mixed $title
      */
     public function setTitle($title)
     {

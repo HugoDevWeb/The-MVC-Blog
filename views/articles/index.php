@@ -6,8 +6,6 @@ require "views/partials/header.php";
 $articles = $this->db->readAll("articles");
 ?>
 
-    <!--    <a class="btn btn-default" href="/index.php?page=show_movies&id=--><?php //echo $value['id']; ?><!--">Info</a>-->
-
     <div class="container mt-5 mx-0">
         <a href="/index.php?page=create_article"
            class="btn btn-secondary rounded-pill float-right">Create article</a>
